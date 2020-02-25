@@ -1,0 +1,61 @@
+html, body, #DemoMap {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#DemoMap {
+    width: 85%;
+    float: right;
+}
+
+#left-sidebar {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: lightsteelblue;
+    position: fixed;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px 15px;
+
+}
+
+/* Search */
+
+.esri-search {
+    width: 275px;
+}
+
+/* Legend */
+
+.esri-legend {
+    border: 3px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(168, 166, 166);
+}
+
+.esri-legend .esri-widget__heading {
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-small;
+    margin: 0px 15px;
+    padding-top: 90px;
+}
