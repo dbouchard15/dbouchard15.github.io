@@ -17,6 +17,9 @@
         <div id="open-left-button-container">        
             <button id="open-left-button" onclick="openLeftSidebar()">OPEN</button>
         </div>
+        <div id="open-legend-button-container">
+            <button id="open-legend-button" onclick="openMobileLegend()">LEGEND</button>
+        </div>
         <div id="left-sidebar">
             <button id="close-left-button" onclick="closeLeftSidebar()">X</button>
             <h1>
@@ -40,6 +43,10 @@
                 This application and information is for demonstration purposes only and is not to be held liable for any misinformation or errors within the application.
             </footer>
         </div>
-        <div id="DemoMap"></div>
+        <div id="DemoMap">
+            <div id="legendDiv">
+                <button id="close-legend-button" onclick="closeMobileLegend()">X</button>
+            </div>
+        </div>
     </body>
 </html>

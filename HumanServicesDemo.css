@@ -3,6 +3,7 @@ html, body, #DemoMap {
     margin: 0;
     height: 100%;
     width: 100%;
+    font-size: 16px;
 }
 
 #DemoMap {
@@ -23,6 +24,55 @@ html, body, #DemoMap {
     overflow-x: hidden;
     overflow-y: auto;
     transition: .8s ease;
+}
+
+#open-legend-button-container {
+    display: none;
+    background: none;
+    z-index: 1;
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    right: 0px;
+}
+
+#open-legend-button {
+    position: absolute;
+    transform: rotate(270deg);
+    margin-left: -38px;
+    bottom: 25%;
+    border: 3px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: rgb(168, 166, 166);
+    font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+#close-legend-button {
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    right: 5px;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: gray;
+}
+
+#close-legend-button:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+    #left-sidebar {width: 0%;}
+    #DemoMap {width: 100%;}
+    #open-legend-button-container {display: inline-block; transition: 1s ease;}
+    .esri-legend {position: absolute; display: inline-block; right: -350px;}
+    .esri-ui-corner .esri-expand .esri-widget--panel, .esri-ui-corner .esri-expand .esri-widget--panel-height-only, .esri-ui-corner .esri-component.esri-widget--panel, .esri-ui-corner .esri-component.esri-widget--panel-height-only {
+        transition: right .8s ease;}
+    #close-legend-button {display: inline-block;}
 }
 
         /* Menu Buttons */
@@ -101,6 +151,7 @@ html, body, #DemoMap {
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
     text-decoration: underline;
     padding-bottom: 30px;
     text-align: center;
@@ -108,6 +159,7 @@ h1 {
 
 p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
     margin: 0px 15px;
     text-align: center;
 }
@@ -135,7 +187,7 @@ p {
 
 footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-small;
+    font-size: .6em;
     margin: 0px 15px;
     padding-top: 90px;
     padding-bottom: 10px;

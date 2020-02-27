@@ -183,6 +183,7 @@ require([
         // LEGEND-----------------------------------------------------------------
 
         var legend = new Legend({
+            container: legendDiv,
             view: view,
             layerInfos: [{
                 layer: resources,

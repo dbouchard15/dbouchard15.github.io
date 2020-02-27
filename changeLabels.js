@@ -26,3 +26,13 @@ function openLeftSidebar() {
     document.getElementById("open-left-button-container").style.left = "-50px";
 
 };
+
+function openMobileLegend() {
+    document.getElementById("legendDiv").style.right =  "0px";
+    document.getElementById("open-legend-button-container").style.right = "-50px";
+}
+
+function closeMobileLegend() {
+    document.getElementById("legendDiv").style.right = "-350px";
+    document.getElementById("open-legend-button-container").style.right = "0px";
+}
