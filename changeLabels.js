@@ -11,3 +11,18 @@ function changeFilterLabels() {
     document.getElementsByTagName("option")[9].innerHTML = "Short Term Inpatient Services";
     document.getElementsByTagName("option")[10].innerHTML ="Support Services, Helplines and Outreach";
 };
+
+function closeLeftSidebar() {
+    document.getElementById("left-sidebar").style.width = "0";
+    document.getElementById("DemoMap").style.width = "100%";
+    document.getElementById("close-left-button").style.display = "none";
+    document.getElementById("open-left-button-container").style.left = "0px";
+};
+
+function openLeftSidebar() {
+    document.getElementById("left-sidebar").style.width = "15%";
+    document.getElementById("DemoMap").style.width ="85%";
+    document.getElementById("close-left-button").style.display = "inline-block";
+    document.getElementById("open-left-button-container").style.left = "-50px";
+
+};
