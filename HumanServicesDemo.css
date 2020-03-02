@@ -26,78 +26,27 @@ html, body, #DemoMap {
     transition: .8s ease;
 }
 
-#open-legend-button-container {
-    display: none;
-    background: none;
-    z-index: 1;
-    position: absolute;
-    width: 15px;
-    height: 100%;
-    right: 0px;
-}
-
-#open-legend-button {
-    position: absolute;
-    transform: rotate(270deg);
-    margin-left: -38px;
-    bottom: 25%;
-    border: 3px solid black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-    background-color: rgb(168, 166, 166);
-    font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1em;
-}
-
-#close-legend-button {
-    display: none;
-    position: absolute;
-    background: none;
-    border: none;
-    right: 5px;
-    font-size: 1.25em;
-    font-weight: 900;
-    color: gray;
-}
-
-#close-legend-button:hover {
-    color: black;
-}
-
-@media only screen and (max-width: 600px){
-    #left-sidebar {width: 0%;}
-    #DemoMap {width: 100%;}
-    #open-legend-button-container {display: inline-block; transition: 1s ease;}
-    .esri-legend {position: absolute; display: inline-block; right: -350px;}
-    .esri-ui-corner .esri-expand .esri-widget--panel, .esri-ui-corner .esri-expand .esri-widget--panel-height-only, .esri-ui-corner .esri-component.esri-widget--panel, .esri-ui-corner .esri-component.esri-widget--panel-height-only {
-        transition: right .8s ease;}
-    #close-legend-button {display: inline-block;}
-}
-
         /* Menu Buttons */
 
         button {
             cursor: pointer;
         }
 
-        #open-left-button-container {
+        #desktop-tabs-container {
             background: none;
-            width: 70px;
-            height: 100%;
-            position: absolute;
-            left: -50px;
             z-index: 1;
-            transition: 1s;
+            position: absolute;
+            width: 15px;
+            height: 100%;
+            left: 0px;
         }
 
-        #open-left-button {
+        #open-left-sidebar-button {
             position: absolute;
             transform: rotate(90deg);
             height: 30px;
             top: 50%;
-            left: 0px;
-            margin-left: -16px;
+            left: -44px;
             border: 3px solid black;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -105,13 +54,14 @@ html, body, #DemoMap {
             background-color: rgb(168, 166, 166);
             font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 1em;
+            transition: left 1s ease;
         }
 
-        #open-left-button:hover {
+        #open-left-sidebar-button:hover {
             color: black
         }
 
-        #close-left-button {
+        #close-left-sidebar-button {
             position: absolute;
             background: none;
             border: none;
@@ -121,26 +71,32 @@ html, body, #DemoMap {
             color: gray;
         }
 
-        #close-left-button:hover {
+        #close-left-sidebar-button:hover {
             color: black;
         }
 
         /* Scrollbar */
 
         #left-sidebar::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
           }
 
           /* Track */
           #left-sidebar::-webkit-scrollbar-track {
-            background: lightsteelblue; 
+            background: lightsteelblue;
           }
 
           /* Handle */
           #left-sidebar::-webkit-scrollbar-thumb {
             background-color: gray;
             border-radius: 10px;
-            border: 3px solid lightsteelblue;
+            border: 2px solid lightsteelblue;
+          }
+
+          /* Handle active */
+          #left-sidebar::-webkit-scrollbar-thumb:active {
+            background-color: black; 
+            cursor: pointer;
           }
 
           /* Handle on hover */
@@ -192,4 +148,102 @@ footer {
     padding-top: 90px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+/* MOBILE-------------------------------------------------------------------------------------- */
+
+#mobile-information {
+    display: none;
+    width: 80%;
+    height: 70%;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    background-color: lightsteelblue;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+    border: 3px outset black;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+#mobile-tabs-container {
+    display: none;
+    background: none;
+    z-index: 1;
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    right: 0px;
+}
+
+        #open-mobile-info-button, #open-legend-button {
+            display: inline-block;
+            position: fixed;
+            transform: rotate(270deg);
+            transform-origin: 100% 100%;
+            border: 3px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: white;
+            background-color: rgb(168, 166, 166);
+            font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1em;
+        }
+
+        #open-mobile-info-button:hover, #open-legend-button:hover {
+            color: black
+        }
+        
+        #open-mobile-info-button {
+            top: 60%;
+            right: -30px;
+            transition: right 1s ease;
+        }
+        
+        #open-legend-button {
+            top: 67%;
+            right: 0px;
+            transition: right 1s ease;
+        }
+
+#close-mobile-info-button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0px;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: gray;
+}
+
+#close-mobile-info-button:hover {
+    color: black
+}
+
+#close-legend-button {
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    right: 5px;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: gray;
+}
+
+#close-legend-button:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+    #left-sidebar {width: 0%;}
+    #DemoMap {width: 100%; opacity: 40%;}
+    #mobile-tabs-container {display: inline-block; transition: 1s ease;}
+    .esri-legend {position: absolute; display: inline-block; right: -350px;}
+    .esri-ui-corner .esri-expand .esri-widget--panel, .esri-ui-corner .esri-expand .esri-widget--panel-height-only, .esri-ui-corner .esri-component.esri-widget--panel, .esri-ui-corner .esri-component.esri-widget--panel-height-only {
+        transition: right .8s ease;}
+    #close-legend-button {display: inline-block;}
+    #mobile-information {display: inline-block;}
 }
