@@ -12,27 +12,40 @@ function changeFilterLabels() {
     document.getElementsByTagName("option")[10].innerHTML ="Support Services, Helplines and Outreach";
 };
 
+// DESKTOP LEFT PANEL ------------------------------------------------------
+
 function closeLeftSidebar() {
     document.getElementById("left-sidebar").style.width = "0";
     document.getElementById("DemoMap").style.width = "100%";
-    document.getElementById("close-left-button").style.display = "none";
-    document.getElementById("open-left-button-container").style.left = "0px";
+    document.getElementById("open-left-sidebar-button").style.left = "-14px";
 };
 
 function openLeftSidebar() {
     document.getElementById("left-sidebar").style.width = "15%";
     document.getElementById("DemoMap").style.width ="85%";
-    document.getElementById("close-left-button").style.display = "inline-block";
-    document.getElementById("open-left-button-container").style.left = "-50px";
-
+    document.getElementById("open-left-sidebar-button").style.left = "-44px";
 };
+
+// MOBILE -----------------------------------------------------------------
 
 function openMobileLegend() {
     document.getElementById("legendDiv").style.right =  "0px";
-    document.getElementById("open-legend-button-container").style.right = "-50px";
+    document.getElementById("open-legend-button").style.right = "-30px";
 }
 
 function closeMobileLegend() {
     document.getElementById("legendDiv").style.right = "-350px";
-    document.getElementById("open-legend-button-container").style.right = "0px";
+    document.getElementById("open-legend-button").style.right = "0px";
+}
+
+function closeMobileInfo() {
+    document.getElementById("mobile-information").style.left = "450px";
+    document.getElementById("open-mobile-info-button").style.right = "0px";
+    document.getElementById("DemoMap").style.opacity = "100%";
+}
+
+function openMobileInfo() {
+    document.getElementById("mobile-information").style.left = "10%";
+    document.getElementById("open-mobile-info-button").style.right = "-30px";
+    document.getElementById("DemoMap").style.opacity = "40%";
 }
