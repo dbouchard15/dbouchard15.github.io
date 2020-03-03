@@ -201,7 +201,7 @@ require([
             "<b>Address:</b> {Address}"  + "<br>" +
             "<b><a target='_blank' href='https://www.google.com/maps/dir//{GoogleAddress}'> Click here for directions </a></b>" + "<br>" + "<br>" +
             "<b>Phone:</b> {Phone_numb}" + "<br>" + "<br>" +
-            "<b>Website:</b> <a target='_blank' href='https://{Website}'> {Website} </a>" + "<br>" + "<br>" +
+            "<b>Website:</b> <a target='_blank' href='{Website}'> {Website} </a>" + "<br>" + "<br>" +
             "<b>Hours of Operation:</b> {Hours_of_O}" + "<br>" + "<br>" +
             "<b>Additional Information:</b> {Notes}"
         };
