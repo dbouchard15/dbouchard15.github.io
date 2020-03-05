@@ -8,10 +8,24 @@ html, body, #DemoMap {
 }
 
 #DemoMap {
+    position: absolute;
+    right: 0;
     width: 85%;
     float: right;
     transition: .8s ease;
-    z-index: 1;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    margin: 0px 15px;
 }
 
 /* Left panel */
@@ -25,56 +39,124 @@ html, body, #DemoMap {
     overflow-x: hidden;
     overflow-y: auto;
     transition: .8s ease;
+    text-align: center;
 }
 
-        /* Menu Buttons */
+button {
+    cursor: pointer;
+}
 
-        button {
-            cursor: pointer;
-        }
 
-        #desktop-tabs-container {
-            background: none;
-            z-index: 1;
-            position: absolute;
-            width: 15px;
-            height: 100%;
-            left: 0px;
-        }
+#desktop-tabs-container {
+    background: none;
+    z-index: 1;
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    left: 0px;
+}
 
-        #open-left-sidebar-button {
-            position: absolute;
-            transform: rotate(90deg);
-            height: 30px;
-            top: 50%;
-            left: -44px;
-            border: 3px solid black;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            color: white;
-            background-color: rgb(168, 166, 166);
-            font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 1em;
-            transition: left 1s ease;
-        }
+#desktop-tabs-container button {
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    height: 30px;
+    left: 0px;
+    border: 3px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    background-color: rgb(168, 166, 166);
+    font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    transition: left 1s ease;
+}
 
-        #open-left-sidebar-button:hover {
-            color: black
-        }
+#open-left-sidebar-button {
+    top: 45%;
+}
 
-        #close-left-sidebar-button {
-            position: absolute;
-            background: none;
-            border: none;
-            right: 0px;
-            font-size: 1.25em;
-            font-weight: 900;
-            color: gray;
-        }
+#desktop-tabs-container button:hover {
+    color: black
+}
 
-        #close-left-sidebar-button:hover {
-            color: black;
-        }
+#close-left-sidebar-button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0px;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: gray;
+}
+
+#close-left-sidebar-button:hover {
+    color: black;
+}
+
+/* Online resources pop-up ----------------------------------------------------*/
+
+#online-resource-container {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    height: 371px;
+    width: 294px;
+    z-index: 1;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(168, 166, 166);
+    font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    transition: left 1s ease;
+}
+
+#online-resource-container h4 {
+    margin: 10px 0px 0px 15px;
+    font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+    border-bottom: 1px dashed black;
+    width: 215px;
+}
+#online-resource-container li {
+    color: black;
+}
+
+.phone-number {
+    list-style-type: circle;
+    font-weight: 600;
+
+}
+
+#online-resource-container a {
+    color: white;
+}
+
+#online-resource-container a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#open-online-resources-button {
+    top: 55%;
+}
+
+#close-online-resources-button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0px;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: gray;
+}
+
+#close-online-resources-button:hover {
+    color: black;
+}
 
         /* Scrollbar */
 
@@ -105,21 +187,6 @@ html, body, #DemoMap {
             background-color: black; 
             cursor: pointer;
           }
-
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
-    text-decoration: underline;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1em;
-    margin: 0px 15px;
-    text-align: center;
-}
 
 /* Search */
 
