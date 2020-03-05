@@ -37,9 +37,6 @@
                 This application and information is for demonstration purposes only and is not to be held liable for any misinformation or errors within the application.
             </footer>
         </div>
-        <div id="desktop-tabs-container">        
-            <button id="open-left-sidebar-button" onclick="openLeftSidebar()">INFO</button>
-        </div>
         <div id="mobile-information">
             <button id="close-mobile-info-button" onclick="closeMobileInfo()">X</button>
             <h1>
@@ -68,6 +65,32 @@
             <button id="open-mobile-info-button" onclick="openMobileInfo()">INFO</button>
         </div>
         <div id="DemoMap">
+            <div id="desktop-tabs-container">        
+                <button id="open-left-sidebar-button" onclick="openLeftSidebar()">INFO</button>
+                <button id="open-online-resources-button" onclick="openOnlineResources()">ONLINE</button>
+            </div>
+            <div id="online-resource-container">
+                <button id="close-online-resources-button" onclick="closeOnlineResources()">X</button>
+                <h4>
+                    Online and Phone Resources
+                </h4>
+                <ul>
+                    <li><a target="_blank" href="https://nj-al-anon.org">Al-Anon</a></li>
+                    <ul><li class="phone-number">1-888-425-2666</li></ul>
+                    <li><a target="_blank" href="https://www.nnjaa.org">Alchohol Anonymous Group</a></li>
+                    <ul><li class="phone-number">1-800-245-1377</li></ul>
+                    <li><a target="_blank" href="https://www.211.org">Get help from 211</a></li>
+                    <ul><li class="phone-number">211</li></ul>
+                    <li><a target="_blank" href="https://www.naranonofnj.org">Nar Anon of NJ</a></li>
+                    <ul><li class="phone-number">1-877-424-4491</li></ul>
+                    <li><a target="_blank" href="https://www.na.org">Narcotics Anonymous</a></li>
+                    <ul><li class="phone-number">1-800-992-0401</li></ul>
+                    <li><a target="_blank" href="https://www.nami.org">National Alliance for the Mentally Ill</a></li>
+                    <ul><li class="phone-number">1-800-950-6264</li></ul>
+                    <li><a target="_blank" href="https://www.njmentalhealthcares.org">NJ Mental Health Cares</a></li>
+                    <ul><li class="phone-number">866-202-4357 (HELP)</li></ul>
+                </ul>
+            </div>
             <div id="legendDiv">
                 <button id="close-legend-button" onclick="closeMobileLegend()">X</button>
             </div>
