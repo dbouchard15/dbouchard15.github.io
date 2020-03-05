@@ -14,17 +14,29 @@ function changeFilterLabels() {
 
 // DESKTOP LEFT PANEL ------------------------------------------------------
 
-function closeLeftSidebar() {
-    document.getElementById("left-sidebar").style.width = "0";
-    document.getElementById("DemoMap").style.width = "100%";
-    document.getElementById("open-left-sidebar-button").style.left = "-14px";
-};
-
 function openLeftSidebar() {
     document.getElementById("left-sidebar").style.width = "15%";
     document.getElementById("DemoMap").style.width ="85%";
-    document.getElementById("open-left-sidebar-button").style.left = "-44px";
+    document.getElementById("open-left-sidebar-button").style.left = "0px";
 };
+
+function closeLeftSidebar() {
+    document.getElementById("left-sidebar").style.width = "0";
+    document.getElementById("DemoMap").style.width = "100%";
+    document.getElementById("open-left-sidebar-button").style.left = "30px";
+};
+
+// DESKTOP ONLINE RESOURCES ------------------------------------------------
+
+function openOnlineResources() {
+    document.getElementById("open-online-resources-button").style.left = "0px";
+    document.getElementById("online-resource-container").style.left = "15px";
+}
+
+function closeOnlineResources() {
+    document.getElementById("open-online-resources-button").style.left = "30px";
+    document.getElementById("online-resource-container").style.left = "-350px";
+}
 
 // MOBILE -----------------------------------------------------------------
 
