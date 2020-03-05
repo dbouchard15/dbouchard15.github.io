@@ -141,7 +141,7 @@ button {
 }
 
 #open-online-resources-button {
-    top: 55%;
+    top: 50%;
 }
 
 #close-online-resources-button {
@@ -265,13 +265,13 @@ footer {
         }
         
         #open-mobile-info-button {
-            top: 57%;
+            top: 45%;
             right: -30px;
             transition: right 1s ease;
         }
         
         #open-legend-button {
-            top: 67%;
+            top: 55%;
             right: 0px;
             transition: right 1s ease;
         }
@@ -307,6 +307,7 @@ footer {
 
 @media only screen and (max-width: 600px){
     #left-sidebar {width: 0%;}
+    #open-left-sidebar-button {display: none;}
     #DemoMap {width: 100%; opacity: 40%;}
     #mobile-tabs-container {display: inline-block; transition: 1s ease;}
     .esri-legend {position: absolute; display: inline-block; right: -350px;}
@@ -314,4 +315,6 @@ footer {
         transition: right .8s ease;}
     #close-legend-button {display: inline-block;}
     #mobile-information {display: inline-block;}
+    #desktop-tabs-container button {left: 30px;}
+    #online-resource-container {left: -350px;}
 }
